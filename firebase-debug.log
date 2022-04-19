@@ -1,0 +1,72 @@
+[debug] [2022-04-19T18:31:42.672Z] ----------------------------------------------------------------------
+[debug] [2022-04-19T18:31:42.674Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\henry\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-04-19T18:31:42.674Z] CLI Version:   10.6.0
+[debug] [2022-04-19T18:31:42.674Z] Platform:      win32
+[debug] [2022-04-19T18:31:42.674Z] Node Version:  v16.14.2
+[debug] [2022-04-19T18:31:42.675Z] Time:          Tue Apr 19 2022 15:31:42 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2022-04-19T18:31:42.675Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-19T18:31:42.733Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-19T18:31:42.733Z] > authorizing via signed-in user (henrymartinsb@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\APPS\amazon-fake
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-04-19T18:31:55.979Z] Using project from CLI flag: fake-7cef9
+[debug] [2022-04-19T18:31:55.981Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fake-7cef9 [none]
+[debug] [2022-04-19T18:31:57.064Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fake-7cef9 200
+[debug] [2022-04-19T18:31:57.064Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fake-7cef9 {"projectId":"fake-7cef9","projectNumber":"1093386849618","displayName":"amazon-fake","name":"projects/fake-7cef9","resources":{"hostingSite":"fake-7cef9"},"state":"ACTIVE"}
+[info] i  Using project fake-7cef9 (amazon-fake) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\APPS\amazon-fake is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=966412431&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-04-19T18:31:57.694Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"62a1eabd0c7d716e6ff1","redirect_uri":"http://localhost:9005","state":"966412431"}
+[debug] [2022-04-19T18:31:58.062Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Tue, 19 Apr 2022 18:31:57 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"c22321093468a512fd2af9ae2a7476a5\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"F574:5C17:3160C4:3CAF52:625F001D"}
+[debug] [2022-04-19T18:31:58.066Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-04-19T18:31:58.428Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-04-19T18:31:58.428Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"henrymartinsb","id":68012319,"node_id":"MDQ6VXNlcjY4MDEyMzE5","avatar_url":"https://avatars.githubusercontent.com/u/68012319?v=4","gravatar_id":"","url":"https://api.github.com/users/henrymartinsb","html_url":"https://github.com/henrymartinsb","followers_url":"https://api.github.com/users/henrymartinsb/followers","following_url":"https://api.github.com/users/henrymartinsb/following{/other_user}","gists_url":"https://api.github.com/users/henrymartinsb/gists{/gist_id}","starred_url":"https://api.github.com/users/henrymartinsb/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/henrymartinsb/subscriptions","organizations_url":"https://api.github.com/users/henrymartinsb/orgs","repos_url":"https://api.github.com/users/henrymartinsb/repos","events_url":"https://api.github.com/users/henrymartinsb/events{/privacy}","received_events_url":"https://api.github.com/users/henrymartinsb/received_events","type":"User","site_admin":false,"name":"Henry Martins","company":"NSB Club","blog":"","location":"Uberlândia","email":null,"hireable":null,"bio":null,"twitter_username":"henrymartinsb","public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2020-07-08T12:04:12Z","updated_at":"2022-04-17T18:24:45Z","private_gists":0,"total_private_repos":6,"owned_private_repos":6,"disk_usage":18461,"collaborators":4,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as henrymartinsb 
+[info] 
+[debug] [2022-04-19T18:32:28.715Z] >>> [apiv2][query] GET https://api.github.com/repos/henymartinsb/amazon-fake/actions/secrets/public-key type=owner
+[debug] [2022-04-19T18:32:29.024Z] <<< [apiv2][status] GET https://api.github.com/repos/henymartinsb/amazon-fake/actions/secrets/public-key 404
+[debug] [2022-04-19T18:32:29.024Z] <<< [apiv2][body] GET https://api.github.com/repos/henymartinsb/amazon-fake/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-04-19T18:32:39.565Z] >>> [apiv2][query] GET https://api.github.com/repos/henymartinsb/amazon-fake/actions/secrets/public-key type=owner
+[debug] [2022-04-19T18:32:39.877Z] <<< [apiv2][status] GET https://api.github.com/repos/henymartinsb/amazon-fake/actions/secrets/public-key 404
+[debug] [2022-04-19T18:32:39.877Z] <<< [apiv2][body] GET https://api.github.com/repos/henymartinsb/amazon-fake/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-04-19T18:33:14.398Z] >>> [apiv2][query] GET https://api.github.com/repos/henymartinsb/amazon-fake/actions/secrets/public-key type=owner
+[debug] [2022-04-19T18:33:14.704Z] <<< [apiv2][status] GET https://api.github.com/repos/henymartinsb/amazon-fake/actions/secrets/public-key 404
+[debug] [2022-04-19T18:33:14.704Z] <<< [apiv2][body] GET https://api.github.com/repos/henymartinsb/amazon-fake/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-04-19T18:33:33.948Z] >>> [apiv2][query] GET https://api.github.com/repos/henymartinsb/amazon-fake/actions/secrets/public-key type=owner
+[debug] [2022-04-19T18:33:34.264Z] <<< [apiv2][status] GET https://api.github.com/repos/henymartinsb/amazon-fake/actions/secrets/public-key 404
+[debug] [2022-04-19T18:33:34.264Z] <<< [apiv2][body] GET https://api.github.com/repos/henymartinsb/amazon-fake/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-04-19T18:33:40.078Z] >>> [apiv2][query] GET https://api.github.com/repos/n/actions/secrets/public-key type=owner
+[debug] [2022-04-19T18:33:40.377Z] <<< [apiv2][status] GET https://api.github.com/repos/n/actions/secrets/public-key 404
+[debug] [2022-04-19T18:33:40.377Z] <<< [apiv2][body] GET https://api.github.com/repos/n/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
