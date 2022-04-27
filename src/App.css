@@ -1,3 +1,11 @@
 * {
   margin: 0;
 }
+
+@media (max-width: 797px) {
+  Home {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  }
+}

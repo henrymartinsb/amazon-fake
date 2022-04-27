@@ -5,6 +5,7 @@
 .header {
     background-color: #131921;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -16,17 +17,24 @@
     margin-top: 17.4px;
 }
 
+.header__logomobile {
+    display: none;
+}
+
 .header__optionBasket {
     display: flex;
     align-items: center;
     position: sticky;
+    margin-left: 10px;
     top: 0;
     z-index: 100;
 }
 
 .header__basketCount {
-    margin-left: 10px;
+    font-size: 15px !important;
+    margin-left: 8px;
     margin-right: 10px;
+    color: #f08804;
 }
 
 .header__locIcon {
@@ -41,6 +49,10 @@
     justify-content: space-evenly;
 }
 
+.header__Nav1e1 {
+    display: none;
+}
+
 .header__nav {
     display: flex;
     justify-content: space-evenly;
@@ -50,11 +62,12 @@
     display: flex;
     flex-direction: column;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .header__optionLineOne {
     font-size: 12px;
+    color: #ccc;
 }
 
 .header__optionLineTwo {
@@ -70,17 +83,135 @@
 .header__search {
     display: flex;
     flex: 1;
+    margin-left: 15px;
+}
+
+.header__searchmobile {
+    display: none;
 }
 
 .header__searchInput {
-    height: 12px;
-    padding: 10px;
+    padding: 9px;
     border: none;
     width: 100%;
+    border-radius: 2px;
 }
 
 .header__searchIcon {
-    padding: 5px;
+    padding: 6.9843px;
     height: 22px !important;
-    background-color: #cd9042;
+    background-color: #f0a92e;
+    border-radius: 0px 2px 2px 0px;
+    margin-left: -4px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+
+#header__loginmobile {
+    display: none;
+}
+
+.header__optionBasketmobile {
+    display: none;
+}
+
+@media (max-width: 797px) {
+    .header {
+        background-color: #131921;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .header__logomobile {
+        display: flex;
+        width: 92px;
+        object-fit: contain;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-right: 93px;
+    }
+
+    .align__logomobile{
+        display: flex;
+    }
+
+    .alinhar__logincesta {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header__locIcon {
+        display: none !important;
+    }
+
+    #mobileoffaddress {
+        display: none;
+    }
+
+    #mobileretire {
+        display: none !important;
+    }
+
+    #mobileretireRO {
+        display: none;
+    }
+
+    .header__search {
+        display: none;
+    }
+
+    .header__searchmobile {
+        display: flex;
+        flex: 1;
+        margin-left: 17px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 95%;
+        
+    }
+
+    .header__optionBasket {
+        display: none;
+    }
+
+    .header__basketCount {
+        display: none;
+    }
+
+    .header__optionBasketmobile {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        margin-left: 10px;
+        top: 0;
+        z-index: 100;
+    }
+
+    .header__basketCountmobile {
+        font-size: 15px !important;
+        margin-left: 8px;
+        margin-right: 10px;
+        color: #f08804;
+    }
+
+    #header__loginmobile {
+        display: flex;
+        color: white !important;
+        margin-right: 0px;
+
+        
+    }
+
+    .align__loginbasket2 {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+
+    
 }
